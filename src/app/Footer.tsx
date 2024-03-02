@@ -10,7 +10,7 @@ const Footer = (): JSX.Element => {
       <div className="socialbar">
         <div className="flex justify-center">
           <div className="socialimg">
-            <a href="https://www.facebook.com/himanshu27.stu">
+            <a href="https://www.facebook.com/profile.php?id=100078333360018">
               <Image
                 width={30}
                 height={30}
@@ -21,7 +21,7 @@ const Footer = (): JSX.Element => {
             </a>
           </div>
           <div className="socialimg">
-            <a href="https://www.instagram.com/himanshu.tasveer">
+            <a href="https://www.instagram.com/g_ban07">
               <Image
                 width={30}
                 height={30}
@@ -31,7 +31,7 @@ const Footer = (): JSX.Element => {
               />
             </a>
           </div>
-          <div className="socialimg">
+          {/* <div className="socialimg">
             <a href="https://github.com/himanshu27tasveer">
               <Image
                 width={30}
@@ -41,9 +41,9 @@ const Footer = (): JSX.Element => {
                 src="/assets/github.png"
               />
             </a>
-          </div>
+          </div> */}
           <div className="socialimg">
-            <a href="https://www.linkedin.com/in/im-himanshu27">
+            <a href="https://www.linkedin.com/in/agrawalgaurang">
               <Image
                 width={30}
                 height={30}
@@ -53,7 +53,7 @@ const Footer = (): JSX.Element => {
               />
             </a>
           </div>
-          <div className="socialimg">
+          {/* <div className="socialimg">
             <a href="https://www.twitter.com/imhimanshu27">
               <Image
                 width={30}
@@ -63,13 +63,17 @@ const Footer = (): JSX.Element => {
                 src="/assets/twitter.png"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="footerCopy">
         <p>
-          No Copyright © 2024 {n > 2020 ? "-" + n : ""}{" "}
-          <a href="https://himanshu.surge.sh" target="_blank_">
+          No Copyright © 2024 {n > 2024 ? "-" + n : ""}{" "}
+          <a
+            href="https://himanshu.surge.sh"
+            style={{ color: "#64c3ff" }}
+            target="_blank_"
+          >
             tasveer
           </a>
           . No rights are reserved.
