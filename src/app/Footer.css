@@ -1,0 +1,129 @@
+.simg{
+    width: 35px;
+    height:35px;
+    margin: 20px;
+  }
+  
+  .simg:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+    }
+  
+  
+  /* .socialimg{
+    padding: 40px;
+    padding-top: 10px;
+  } */
+  
+  .socialbar{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  #footer{
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .footerText{
+    text-align: center;
+    color: #858585;
+    padding: 20px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  
+  .footerCopy{
+    padding-top: 0px;
+    text-align: center;
+    color: #858585;
+  }
+  
+  @media only screen and (max-width:800px){
+    .socialimg{
+      padding: 15px;
+    }
+  
+    .simg {
+      width: 25px;
+      height:25px;
+      margin: 5px;
+    }
+  
+    .footerText{
+      text-align: center;
+      color: #858585;
+      padding: 20px;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      font-size: 12px;
+    }
+  
+    .footerCopy{
+      padding-top: 0px;
+      text-align: center;
+      color: #858585;
+      font-size: 14px;
+    }
+  }
+  
+  
+  .gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #CA4246;
+    
+    /* Create the gradient. */
+     background-image: linear-gradient(to right, #ff0000 40%, #ffff00 45% ,#00ff00 50%, #00ffff 55%,#0000ff 60%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  
+  }
+  
+  .gradient-text:hover{
+      animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+  
+  
+  /* Move the background and make it smaller. */
+  /* Animation shown when entering the page and after the hover animation. */
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  
+  /* Move the background and make it larger. */
+  /* Animation shown when hovering over the text. */
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
